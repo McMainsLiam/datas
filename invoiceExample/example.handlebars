@@ -5,13 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Handlebars Example</title>
+
+  <style>
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .justify-content-space-between {
+      justify-content: space-between;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
 </head>
 
 <body>
-  <p>Hello, my name is {{defaultContext.name}}. I am from {{defaultContext.hometown}}. I have
-    {{defaultContext.kids.length}} kids:</p>
-
-  <ul>{{#each defaultContext.kids}}<li>{{name}} is {{age}}</li>{{/each}}</ul>
+  <div class="row justify-content-space-between">
+    <div>
+      <p>ObjectSpectrum, LLC</p>
+      <p>4400 Beltway Drive</p>
+      <p>Addison, TX 75001 US</p>
+      <p>(972) 456-9100</p>
+      <p>accounting@objectspectrum.com</p>
+    </div>
+    <div>
+      <img
+        src="https://media-exp1.licdn.com/dms/image/C4E0BAQFVei-EGlUD3w/company-logo_200_200/0?e=2159024400&v=beta&t=hOpw1qytvT6t0LnG4s_tnXYjPHFB9IDwhHFQkHta8lw"
+        alt="">
+    </div>
+  </div>
 </body>
 
 </html>
