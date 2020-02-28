@@ -1,4 +1,17 @@
-<p>Hello, my name is {{defaultContext.name}}. I am from {{defaultContext.hometown}}. I have
-  {{defaultContext.kids.length}} kids:</p>
+<!DOCTYPE html>
+<html lang="en">
 
-<ul>{{#kids}}<li>{{defaultContext.name}} is {{defaultContext.age}}</li>{{/kids}}</ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handlebars Example</title>
+</head>
+
+<body>
+  <p>Hello, my name is {{defaultContext.name}}. I am from {{defaultContext.hometown}}. I have
+    {{defaultContext.kids.length}} kids:</p>
+
+  <ul>{{#each defaultContext.kids}}<li>{{name}} is {{age}}</li>{{/each}}</ul>
+</body>
+
+</html>
