@@ -1,10 +1,10 @@
-const dataSchema = require("./dataSchema");
+const dataSchema = require("../dataSchema");
 
 module.exports = {
   stylesheet: {
     id: "stylesheet_id",
     url:
-      "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example.css"
+      "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example2/example.css"
   },
   handlebarsFile: {
     id: "handlebars_id",
@@ -16,17 +16,17 @@ module.exports = {
     {
       id: "invoiceInformation",
       url:
-        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/data/invoiceInformation.json"
+        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example2/data/invoiceInformation.json"
     },
     {
       id: "receiverInformation",
       url:
-        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/data/receiverInformation.json"
+        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example2/data/receiverInformation.json"
     },
     {
       id: "senderInformation",
       url:
-        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/data/senderInformation.json"
+        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example2/data/senderInformation.json"
     }
   ]
 };
