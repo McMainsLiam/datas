@@ -32,6 +32,87 @@
       },
       "quantity": 1,
       "rate": 5000
+    },
+    {
+      "date": "04/16/2018",
+      "service": {
+        "title": "Prototyping",
+        "description": "Engineering Prototype of Laser ToF Water Level Sensor"
+      },
+      "quantity": 1,
+      "rate": 3000
+    },
+    {
+      "date": "04/01/2018",
+      "service": {
+        "title": "Engineering",
+        "description": "Creating a refrigerator out of magnets"
+      },
+      "quantity": 1,
+      "rate": 4000
+    },
+    {
+      "date": "04/24/2018",
+      "service": {
+        "title": "Painting",
+        "description": "Recreating the Mona Lisa"
+      },
+      "quantity": 1,
+      "rate": 5000
+    },
+    {
+      "date": "04/16/2018",
+      "service": {
+        "title": "Prototyping",
+        "description": "Engineering Prototype of Laser ToF Water Level Sensor"
+      },
+      "quantity": 1,
+      "rate": 3000
+    },
+    {
+      "date": "04/01/2018",
+      "service": {
+        "title": "Engineering",
+        "description": "Creating a refrigerator out of magnets"
+      },
+      "quantity": 1,
+      "rate": 4000
+    },
+    {
+      "date": "04/24/2018",
+      "service": {
+        "title": "Painting",
+        "description": "Recreating the Mona Lisa"
+      },
+      "quantity": 1,
+      "rate": 5000
+    },
+    {
+      "date": "04/16/2018",
+      "service": {
+        "title": "Prototyping",
+        "description": "Engineering Prototype of Laser ToF Water Level Sensor"
+      },
+      "quantity": 1,
+      "rate": 3000
+    },
+    {
+      "date": "04/01/2018",
+      "service": {
+        "title": "Engineering",
+        "description": "Creating a refrigerator out of magnets"
+      },
+      "quantity": 1,
+      "rate": 4000
+    },
+    {
+      "date": "04/24/2018",
+      "service": {
+        "title": "Painting",
+        "description": "Recreating the Mona Lisa"
+      },
+      "quantity": 1,
+      "rate": 5000
     }
   ]
 }

@@ -73,7 +73,7 @@ html {
 }
 
 .header {
-  background-color: var(--brand-color-light) !important;
+  background-color: var(--brand-color-light);
   margin: 0;
   padding: 4px 0 6px 0;
   text-align: left;
