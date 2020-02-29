@@ -1,0 +1,20 @@
+{
+  "height": "11in",
+  "width": "8.5in",
+  "marginTop": "10mm",
+  "marginBottom": "10mm",
+  "marginLeft": "10mm",
+  "marginRight": "10mm",
+  "margin": "20mm",
+  "contentAreas": [
+    {
+      "location": "bottom-right",
+      "type": "text",
+      "content": "Made Payable to Liam McMains"
+    },
+    {
+      "location": "top-right-corner",
+      "type": "pageNumber"
+    }
+  ]
+}

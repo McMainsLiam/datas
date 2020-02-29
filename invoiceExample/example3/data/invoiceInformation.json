@@ -1,0 +1,91 @@
+{
+  "identifier": "1804776",
+  "date": "04/16/2018",
+  "dueDate": "04/16/2018",
+  "terms": "Due on receipt",
+  "totalCost": 9700,
+  "balanceDue": 9700,
+  "items": [
+    {
+      "date": "04/16/2018",
+      "service": {
+        "title": "Software Development",
+        "description": "Engineering prototype of dyanmic report generation endpoint."
+      },
+      "quantity": 10,
+      "rate": 70
+    },
+    {
+      "date": "04/01/2018",
+      "service": {
+        "title": "Lunch",
+        "description": "Took fellow business partners out to lunch"
+      },
+      "quantity": 1,
+      "rate": 4000
+    },
+    {
+      "date": "04/24/2018",
+      "service": {
+        "title": "Painting",
+        "description": "Recreating the Mona Lisa"
+      },
+      "quantity": 1,
+      "rate": 5000
+    },
+    {
+      "date": "04/16/2018",
+      "service": {
+        "title": "Software Development",
+        "description": "Engineering prototype of dyanmic report generation endpoint."
+      },
+      "quantity": 10,
+      "rate": 70
+    },
+    {
+      "date": "04/01/2018",
+      "service": {
+        "title": "Lunch",
+        "description": "Took fellow business partners out to lunch"
+      },
+      "quantity": 1,
+      "rate": 4000
+    },
+    {
+      "date": "04/24/2018",
+      "service": {
+        "title": "Painting",
+        "description": "Recreating the Mona Lisa"
+      },
+      "quantity": 1,
+      "rate": 5000
+    },
+    {
+      "date": "04/16/2018",
+      "service": {
+        "title": "Software Development",
+        "description": "Engineering prototype of dyanmic report generation endpoint."
+      },
+      "quantity": 10,
+      "rate": 70
+    },
+    {
+      "date": "04/01/2018",
+      "service": {
+        "title": "Lunch",
+        "description": "Took fellow business partners out to lunch"
+      },
+      "quantity": 1,
+      "rate": 4000
+    },
+    {
+      "date": "04/24/2018",
+      "service": {
+        "title": "Painting",
+        "description": "Recreating the Mona Lisa"
+      },
+      "quantity": 1,
+      "rate": 5000
+    }
+  ]
+}

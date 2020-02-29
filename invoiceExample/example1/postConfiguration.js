@@ -1,4 +1,5 @@
 const dataSchema = require("../dataSchema");
+const pagedData = require("./data/pagedData.json");
 
 module.exports = {
   stylesheet: {
@@ -12,6 +13,7 @@ module.exports = {
       "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example.handlebars",
     jsonSchema: dataSchema
   },
+  pagedData,
   contexts: [
     {
       id: "invoiceInformation",
