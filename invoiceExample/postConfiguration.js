@@ -14,9 +14,19 @@ module.exports = {
   },
   contexts: [
     {
-      id: "invoiceDataContext",
+      id: "invoiceInformation",
       url:
-        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/data1.json"
+        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/data/invoiceInformation.json"
+    },
+    {
+      id: "receiverInformation",
+      url:
+        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/data/receiverInformation.json"
+    },
+    {
+      id: "senderInformation",
+      url:
+        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/data/senderInformation.json"
     }
   ]
 };
