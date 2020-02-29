@@ -3,12 +3,10 @@ const pagedData = require("./data/pagedData.json");
 
 module.exports = {
   stylesheet: {
-    id: "stylesheet_id",
     url:
       "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example1/example.css"
   },
   handlebarsFile: {
-    id: "handlebars_id",
     url:
       "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example.handlebars",
     jsonSchema: dataSchema

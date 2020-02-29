@@ -4,7 +4,7 @@ const pagedData = require("./data/pagedData.json");
 module.exports = {
   stylesheet: {
     url:
-      "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example2/example.css"
+      "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example3/example.css"
   },
   handlebarsFile: {
     url:
@@ -16,17 +16,17 @@ module.exports = {
     {
       id: "invoiceInformation",
       url:
-        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example2/data/invoiceInformation.json"
+        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example3/data/invoiceInformation.json"
     },
     {
       id: "receiverInformation",
       url:
-        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example2/data/receiverInformation.json"
+        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example3/data/receiverInformation.json"
     },
     {
       id: "senderInformation",
       url:
-        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example2/data/senderInformation.json"
+        "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example3/data/senderInformation.json"
     }
   ]
 };
