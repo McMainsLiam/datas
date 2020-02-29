@@ -80,9 +80,9 @@
         <p class="bold small-margin">{{ service.title }}</p>
         <p class="margin-reset">{{ service.description }}</p>
       </td>
-      <td class="min-width-data align-right">{{ quantity }}</td>
-      <td class="min-width-data align-right">{{ rate }}</td>
-      <td class="min-width-data align-right">{{ multiplyBy quantity rate }}</td>
+      <td class="min-width-data align-right">{{ formatCurrencyAsUSD quantity }}</td>
+      <td class="min-width-data align-right">{{ formatCurrencyAsUSD rate }}</td>
+      <td class="min-width-data align-right">{{ formatCurrencyAsUSD multiplyBy quantity rate }}</td>
     </tr>
     {{/each}}
   </table>
