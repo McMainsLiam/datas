@@ -4,22 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Handlebars Example</title>
+  <title>Invoice #{{ invoiceInformation.identifier }}</title>
 </head>
 
 <body>
   <div class="row justify-content-space-between align-items-center">
     <div>
-      <p class="small-margin bold">ObjectSpectrum, LLC</p>
-      <p class="small-margin">4400 Beltway Drive</p>
-      <p class="small-margin">Addison, TX 75001 US</p>
-      <p class="small-margin">(972) 456-9100</p>
-      <p class="small-margin">accounting@objectspectrum.com</p>
+      <p class="small-margin bold">{{ senderInformation.name }}</p>
+      <p class="small-margin">{{ senderInformation.streetAddress }}</p>
+      <p class="small-margin">{{ senderInformation.cityStateZip }}</p>
+      <p class="small-margin">{{ senderInformation.phone }}</p>
+      <p class="small-margin">{{ senderInformation.email }}</p>
     </div>
     <div>
-      <img class="logo"
-        src="https://media-exp1.licdn.com/dms/image/C4E0BAQFVei-EGlUD3w/company-logo_200_200/0?e=2159024400&v=beta&t=hOpw1qytvT6t0LnG4s_tnXYjPHFB9IDwhHFQkHta8lw"
-        alt="">
+      <img class="logo" src="{{ senderInformation.logoUrl }}" alt="">
     </div>
   </div>
 
@@ -28,11 +26,10 @@
   <div class="row justify-content-space-between" style="margin-top: 18px">
     <div>
       <p class="bold margin-reset">BILL TO</p>
-      <p class="small-margin">Joe Allison</p>
-      <p class="small-margin">Promax Engineered Plastics</p>
-      <p class="small-margin">PO Box 749</p>
-      <p class="small-margin">Kerikeri, Bay Of Islands 0245</p>
-      <p class="small-margin">NZ</p>
+      <p class="small-margin">{{ receiverInformation.name }}</p>
+      <p class="small-margin">{{ receiverInformation.businessName }}</p>
+      <p class="small-margin">{{ receiverInformation.streetAddress }}</p>
+      <p class="small-margin">{{ receiverInformation.cityStateZip }}</p>
     </div>
     <div class="row">
       <div class="column align-items-flex-end" style="padding-right: 6px">
@@ -51,16 +48,16 @@
       </div>
       <div class="column align-items-flex-start">
         <p class="small-margin">
-          1804776
+          {{ invoiceInformation.identifier }}
         </p>
         <p class="small-margin">
-          04/16/2018
+          {{ invoiceInformation.date }}
         </p>
         <p class="small-margin">
-          04/16/2018
+          {{ invoiceInformation.dueDate }}
         </p>
         <p class="small-margin">
-          Due on receipt
+          {{ invoiceInformation.terms }}
         </p>
       </div>
     </div>
@@ -76,16 +73,18 @@
       <th class="header align-right">Rate</th>
       <th class="header align-right">Amount</th>
     </tr>
+    {{#each invoiceInformation.items}}
     <tr>
-      <td class="min-width-data">04/16/2018</td>
+      <td class="min-width-data">{{ date }}</td>
       <td class="min-width-data">
-        <p class="bold small-margin">Prototyping</p>
-        <p class="margin-reset">Engineering Prototype of Laser ToF Water Level Sensor</p>
+        <p class="bold small-margin">{{ service.title }}</p>
+        <p class="margin-reset">{{ service.description }}</p>
       </td>
-      <td class="min-width-data align-right">1</td>
-      <td class="min-width-data align-right">3,000.00</td>
-      <td class="min-width-data align-right">3,000.00</td>
+      <td class="min-width-data align-right">{{ quantity }}</td>
+      <td class="min-width-data align-right">{{ rate }}</td>
+      <td class="min-width-data align-right">{{ quantity * rate }}</td>
     </tr>
+    {{/each}}
   </table>
 
   <hr class="dotted-hr" />
