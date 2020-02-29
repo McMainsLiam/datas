@@ -97,8 +97,8 @@
         <p class="small-margin">BALANCE DUE</p>
       </div>
       <div>
-        <p class="small-margin">3,000.00</p>
-        <p class="balance-due small-margin">$0.00</p>
+        <p class="small-margin">{{ formatCurrencyAsUSD invoiceInformation.totalCost }}</p>
+        <p class="balance-due small-margin">{{ formatCurrencyAsUSD invoiceInformation.balanceDue }}</p>
       </div>
     </div>
   </div>

@@ -212,6 +212,22 @@ module.exports = {
                 title: "The Rate Schema",
                 default: 0,
                 examples: [3000]
+              },
+              totalCost: {
+                $id:
+                  "#/properties/invoiceInformation/properties/items/items/properties/totalCost",
+                type: "integer",
+                title: "The Total Cost Schema",
+                default: 0,
+                examples: [1000]
+              },
+              balanceDue: {
+                $id:
+                  "#/properties/invoiceInformation/properties/items/items/properties/balanceDue",
+                type: "integer",
+                title: "The Balance Due Schema",
+                default: 0,
+                examples: [1000]
               }
             }
           }

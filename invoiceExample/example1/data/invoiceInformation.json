@@ -3,6 +3,8 @@
   "date": "04/16/2018",
   "dueDate": "04/16/2018",
   "terms": "Due on receipt",
+  "totalCost": 3000,
+  "balanceDue": 3000,
   "items": [
     {
       "date": "04/16/2018",
