@@ -103,9 +103,9 @@ html {
 table {
   -fs-table-paginate: paginate;
 }
-thead {
+/* thead {
   display: table-header-group;
 }
 tfoot {
   display: table-header-group;
-}
+} */
