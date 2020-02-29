@@ -1,3 +1,7 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -7,7 +11,96 @@
   justify-content: space-between;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
 .column {
   display: flex;
   flex-direction: column;
 }
+
+.small-margin {
+  margin: 0px;
+  margin-top: 3px;
+}
+
+.logo {
+  height: 1in;
+  width: 1in;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.invoiceTitle {
+  font-size: 28px;
+  color: red;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.margin-reset {
+  margin: 0;
+}
+
+.branded-hr {
+  margin: 24px 0 0.75in 0;
+  border-color: red;
+}
+
+.dotted-hr {
+  margin: 30px 0 0 0;
+  border: 1px dashed gray;
+}
+
+.header {
+  background-color: #ff000033;
+  margin: 0;
+  padding: 4px 0 6px 0;
+  text-align: left;
+  color: red;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.min-width-data {
+  min-width: 1in;
+}
+
+.balance-due {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.min-width {
+  min-width: 3in;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* These need to be commeted out at the end, they are just for my purposed at the moment */
+/* html {
+  background-color: lightgray;
+}
+
+body {
+  width: 8.5in;
+  min-height: 11in;
+  background-color: white;
+} */

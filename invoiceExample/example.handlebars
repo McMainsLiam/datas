@@ -5,21 +5,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Handlebars Example</title>
+  <link rel="stylesheet" type="text/css" href="./example.css" />
 </head>
 
 <body>
-  <div class="row justify-content-space-between">
+  <div class="row justify-content-space-between align-items-center">
     <div>
-      <p>ObjectSpectrum, LLC</p>
-      <p>4400 Beltway Drive</p>
-      <p>Addison, TX 75001 US</p>
-      <p>(972) 456-9100</p>
-      <p>accounting@objectspectrum.com</p>
+      <p class="small-margin bold">ObjectSpectrum, LLC</p>
+      <p class="small-margin">4400 Beltway Drive</p>
+      <p class="small-margin">Addison, TX 75001 US</p>
+      <p class="small-margin">(972) 456-9100</p>
+      <p class="small-margin">accounting@objectspectrum.com</p>
     </div>
     <div>
-      <img
+      <img class="logo"
         src="https://media-exp1.licdn.com/dms/image/C4E0BAQFVei-EGlUD3w/company-logo_200_200/0?e=2159024400&v=beta&t=hOpw1qytvT6t0LnG4s_tnXYjPHFB9IDwhHFQkHta8lw"
         alt="">
+    </div>
+  </div>
+
+  <p class="invoiceTitle uppercase">Invoice</p>
+
+  <div class="row justify-content-space-between" style="margin-top: 18px">
+    <div>
+      <p class="bold margin-reset">BILL TO</p>
+      <p class="small-margin">Joe Allison</p>
+      <p class="small-margin">Promax Engineered Plastics</p>
+      <p class="small-margin">PO Box 749</p>
+      <p class="small-margin">Kerikeri, Bay Of Islands 0245</p>
+      <p class="small-margin">NZ</p>
+    </div>
+    <div class="row">
+      <div class="column align-items-flex-end" style="padding-right: 6px">
+        <p class="small-margin bold uppercase">
+          Invoice #
+        </p>
+        <p class="small-margin bold uppercase">
+          Date
+        </p>
+        <p class="small-margin bold uppercase">
+          Due Date
+        </p>
+        <p class="small-margin bold uppercase">
+          terms
+        </p>
+      </div>
+      <div class="column align-items-flex-start">
+        <p class="small-margin">
+          1804776
+        </p>
+        <p class="small-margin">
+          04/16/2018
+        </p>
+        <p class="small-margin">
+          04/16/2018
+        </p>
+        <p class="small-margin">
+          Due on receipt
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="branded-hr" />
+
+  <table style=" width:100%; border-collapse: collapse;">
+    <tr>
+      <th class="header">Date</th>
+      <th class="header">Service</th>
+      <th class="header align-right">QTY</th>
+      <th class="header align-right">Rate</th>
+      <th class="header align-right">Amount</th>
+    </tr>
+    <tr>
+      <td class="min-width-data">04/16/2018</td>
+      <td class="min-width-data">
+        <p class="bold small-margin">Prototyping</p>
+        <p class="margin-reset">Engineering Prototype of Laser ToF Water Level Sensor</p>
+      </td>
+      <td class="min-width-data align-right">1</td>
+      <td class="min-width-data align-right">3,000.00</td>
+      <td class="min-width-data align-right">3,000.00</td>
+    </tr>
+  </table>
+
+  <hr class="dotted-hr" />
+
+  <div class="row justify-content-space-between" style="padding-top: 12px;">
+    <p class="small-margin">All amounts shown in USD. </p>
+    <div class="row justify-content-space-between">
+      <div class="min-width">
+        <p class="small-margin">PAYMENT</p>
+        <p class="small-margin">BALANCE DUE</p>
+      </div>
+      <div>
+        <p class="small-margin">3,000.00</p>
+        <p class="balance-due small-margin">$0.00</p>
+      </div>
     </div>
   </div>
 </body>
