@@ -100,12 +100,7 @@ html {
 }
 
 /* Attempt to repeat the head of the table on each page */
-table {
-  -fs-table-paginate: paginate;
-}
 thead {
   display: table-header-group;
-}
-tfoot {
-  display: table-header-group;
+  break-inside: avoid;
 }

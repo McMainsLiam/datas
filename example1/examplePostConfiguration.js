@@ -10,7 +10,7 @@ module.exports = {
     id: "handlebars_id",
     url:
       "https://raw.githubusercontent.com/McMainsLiam/datas/master/example1/example.handlebars",
-    jsonSchema: dataSchema
+    dataSchema
   },
   contexts: [
     {

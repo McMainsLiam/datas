@@ -9,7 +9,7 @@ module.exports = {
   handlebarsFile: {
     url:
       "https://raw.githubusercontent.com/McMainsLiam/datas/master/invoiceExample/example.handlebars",
-    jsonSchema: dataSchema
+      dataSchema
   },
   pagedData,
   contexts: [
