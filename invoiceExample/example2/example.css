@@ -101,6 +101,6 @@ html {
 
 /* Attempt to repeat the head of the table on each page */
 thead {
-  display: table-header-group;
-  break-inside: avoid;
+  display: table-header-group !important;
+  break-inside: avoid !important;
 }
