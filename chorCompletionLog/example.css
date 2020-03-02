@@ -88,9 +88,6 @@ tr,
 td,
 th {
   border: 2px solid black;
-}
-
-table, tr, td, th, thead, tbody {
   page-break-inside: avoid;
 }
 
