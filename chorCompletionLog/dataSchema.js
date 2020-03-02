@@ -1,6 +1,6 @@
 module.exports = {
   $schema: "http://json-schema.org/draft-07/schema",
-  $id: "http://objectspectrum.com/chorCompletionLog",
+  $id: "http://example.com/example.json",
   type: "object",
   title: "The Root Schema",
   description: "The root schema comprises the entire JSON document.",
@@ -37,18 +37,14 @@ module.exports = {
       default: {},
       examples: [
         {
-          averageMortalityLbs: 350.0,
-          group: "Group One",
-          dailyVisitsRatioDenominator: 5.0,
-          dailyVisitsRatioNumerator: 4.0,
           records: [
             {
               employee: "Liam McMains",
               description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
               date: "12/02/2019",
-              room: "Room One",
               completed: "12:00pm",
+              room: "Room One",
               chor: "Doing something"
             },
             {
@@ -56,18 +52,18 @@ module.exports = {
               description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
               date: "12/02/2019",
-              completed: "12:00pm",
               room: "Room One",
+              completed: "12:00pm",
               chor: "Doing something"
             },
             {
+              room: "Room One",
+              completed: "12:00pm",
+              chor: "Doing something",
+              employee: "Liam McMains",
               description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-              employee: "Liam McMains",
-              date: "12/02/2019",
-              completed: "12:00pm",
-              room: "Room One",
-              chor: "Doing something"
+              date: "12/02/2019"
             }
           ],
           dateArrived: "12/17/2019",
@@ -76,8 +72,14 @@ module.exports = {
           chorCompletionRatioNumberator: 5.0,
           chorCompletionRatioDenominator: 8.0,
           building: "Building One",
+          dailyVisitsPercentage: 80.0,
           averageLbs: 500.0,
-          animalInBarnCurrently: 43.0
+          chorCompletionPercentage: 62.5,
+          animalInBarnCurrently: 43.0,
+          averageMortalityLbs: 350.0,
+          group: "Group One",
+          dailyVisitsRatioDenominator: 5.0,
+          dailyVisitsRatioNumerator: 4.0
         }
       ],
       required: [
@@ -91,10 +93,9 @@ module.exports = {
         "averageMortalityLbs",
         "dailyVisitsRatioNumerator",
         "dailyVisitsRatioDenominator",
+        "dailyVisitsPercentage",
         "chorCompletionRatioNumberator",
         "chorCompletionRatioDenominator",
-        ,
-        "dailyVisitsPercentage",
         "chorCompletionPercentage",
         "records"
       ],
@@ -114,22 +115,6 @@ module.exports = {
           description: "An explanation about the purpose of this instance.",
           default: "",
           examples: ["Group One"]
-        },
-        dailyVisitsPercentage: {
-          $id: "#/properties/logData/properties/building",
-          type: "number",
-          title: "The dailyVisitsPercentage Schema",
-          description: "An explanation about the purpose of this instance.",
-          default: "",
-          examples: [3]
-        },
-        chorCompletionRatioDenominator: {
-          $id: "#/properties/logData/properties/group",
-          type: "number",
-          title: "The chorCompletionRatioDenominator Schema",
-          description: "An explanation about the purpose of this instance.",
-          default: "",
-          examples: [3]
         },
         animalInBarnCurrently: {
           $id: "#/properties/logData/properties/animalInBarnCurrently",
@@ -195,6 +180,14 @@ module.exports = {
           default: 0,
           examples: [5]
         },
+        dailyVisitsPercentage: {
+          $id: "#/properties/logData/properties/dailyVisitsPercentage",
+          type: "integer",
+          title: "The Dailyvisitspercentage Schema",
+          description: "An explanation about the purpose of this instance.",
+          default: 0,
+          examples: [80]
+        },
         chorCompletionRatioNumberator: {
           $id: "#/properties/logData/properties/chorCompletionRatioNumberator",
           type: "integer",
@@ -211,6 +204,14 @@ module.exports = {
           default: 0,
           examples: [8]
         },
+        chorCompletionPercentage: {
+          $id: "#/properties/logData/properties/chorCompletionPercentage",
+          type: "number",
+          title: "The Chorcompletionpercentage Schema",
+          description: "An explanation about the purpose of this instance.",
+          default: 0,
+          examples: [62.5]
+        },
         records: {
           $id: "#/properties/logData/properties/records",
           type: "array",
@@ -225,31 +226,31 @@ module.exports = {
             default: {},
             examples: [
               {
+                employee: "Liam McMains",
+                description:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                date: "12/02/2019",
+                completed: "12:00pm",
+                room: "Room One",
+                chor: "Doing something"
+              },
+              {
+                employee: "Liam McMains",
+                description:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                date: "12/02/2019",
+                room: "Room One",
+                completed: "12:00pm",
+                chor: "Doing something"
+              },
+              {
+                room: "Room One",
+                completed: "12:00pm",
                 chor: "Doing something",
                 employee: "Liam McMains",
                 description:
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                date: "12/02/2019",
-                completed: "12:00pm",
-                room: "Room One"
-              },
-              {
-                employee: "Liam McMains",
-                description:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                date: "12/02/2019",
-                room: "Room One",
-                completed: "12:00pm",
-                chor: "Doing something"
-              },
-              {
-                description:
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                employee: "Liam McMains",
-                date: "12/02/2019",
-                room: "Room One",
-                completed: "12:00pm",
-                chor: "Doing something"
+                date: "12/02/2019"
               }
             ],
             required: [

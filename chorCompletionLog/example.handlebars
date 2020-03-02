@@ -86,7 +86,7 @@
       <span class="verticalText">
         Daily Visit %:
       </span>
-      <span class="largeText">{{ logData.dailyVisitsPercentage }}</span>
+      <span class="largeText">{{ logData.dailyVisitsPercentage }}%</span>
     </div>
     <div class="quarter">
       <span class="verticalText">
@@ -99,7 +99,7 @@
       <span class="verticalText">
         Chor Completion %:
       </span>
-      <span class="largeText">{{ logData.chorCompletionPercentage }}</span>
+      <span class="largeText">{{ logData.chorCompletionPercentage }}%</span>
     </div>
   </div>
 
@@ -116,7 +116,7 @@
     </thead>
     <tbody>
 
-      {{#each logData.chorCompletionPercentage}}
+      {{#each logData.records}}
       <tr>
         <td>{{ date }}</td>
         <td>{{ room }}</td>
