@@ -90,6 +90,10 @@ th {
   border: 2px solid black;
 }
 
+table.print-friendly tr td, table.print-friendly tr th {
+  page-break-inside: avoid;
+}
+
 .fullWidthRow {
   text-align: center;
   font-size: 20px;
