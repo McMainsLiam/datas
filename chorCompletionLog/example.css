@@ -90,7 +90,7 @@ th {
   border: 2px solid black;
 }
 
-table.print-friendly tr td, table.print-friendly tr th {
+table, tr, td, th, thead, tbody {
   page-break-inside: avoid;
 }
 
