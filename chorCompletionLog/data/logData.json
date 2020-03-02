@@ -12,8 +12,24 @@
   "dailyVisitsPercentage": 80,
   "chorCompletionRatioNumberator": 5,
   "chorCompletionRatioDenominator": 8,
-  "chorCompletionPercentage": 62.5,
+  "chorCompletionPercentage": 62,
   "records": [
+    {
+      "date": "12/02/2019",
+      "room": "Room One",
+      "chor": "Doing something",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "completed": "12:00pm",
+      "employee": "Liam McMains"
+    },
+    {
+      "date": "12/02/2019",
+      "room": "Room One",
+      "chor": "Doing something",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "completed": "12:00pm",
+      "employee": "Liam McMains"
+    },
     {
       "date": "12/02/2019",
       "room": "Room One",
