@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chor Completion Log</title>
+</head>
+
+<body>
+  <div class="titleContainer">
+    <span class="companyName">
+      {{ companyInfo.companyName }}
+    </span>
+    <span class="title">
+      Chor Completion Log
+    </span>
+  </div>
+
+  <div class="borderBottomRow">
+    <span class="dataTitle">
+      Building:
+    </span>
+    <span>{{ logData.building }}</span>
+  </div>
+
+  <div class="borderBottomRow">
+    <div style="width: 65%;">
+      <span class="dataTitle">
+        Group:
+      </span>
+      <span>{{ logData.group }}</span>
+    </div>
+    <div style="width: 35%;">
+      <span class="dataTitle">
+        Date Arrived:
+      </span>
+      <span>{{ logData.dateArrived }}</span>
+    </div>
+  </div>
+
+  <div class="borderBottomRow">
+    <div style="width: 65%;">
+      <span class="dataTitle">
+        Number of animals in barn currently:
+      </span>
+      <span>{{ logData.animalInBarnCurrently }}</span>
+    </div>
+    <div style="width: 35%;">
+      <span class="dataTitle">
+        Average lbs:
+      </span>
+      <span>{{ logData.averageLbs }}</span>
+    </div>
+  </div>
+
+  <div class="borderBottomRow">
+    <div style="width: 35%;">
+      <span class="dataTitle">
+        Number of animals in:
+      </span>
+      <span>{{ logData.animalsIn }}</span>
+    </div>
+    <div style="width: 30%;">
+      <span class="dataTitle">
+        Total of mortality:
+      </span>
+      <span>{{ logData.totalMortality }}</span>
+    </div>
+    <div style="width: 35%;">
+      <span class="dataTitle">
+        Average mortality lbs:
+      </span>
+      <span>{{ logData.averageMortalityLbs }}</span>
+    </div>
+  </div>
+
+  <div class="largeDataContainer">
+    <div class="quarter">
+      <span class="verticalText">
+        Daily Visit Ratio:
+      </span>
+      <span class="largeText">{{ logData.dailyVisitsRatioNumerator }} / {{ logData.dailyVisitsRatioDenominator }}</span>
+    </div>
+    <div class="quarter">
+      <span class="verticalText">
+        Daily Visit %:
+      </span>
+      <span class="largeText">{{ logData.dailyVisitsPercentage }}</span>
+    </div>
+    <div class="quarter">
+      <span class="verticalText">
+        Chor Completion Ratio:
+      </span>
+      <span class="largeText">{{ logData.chorCompletionRatioNumberator }} /
+        {{ logData.chorCompletionRatioDenominator }}</span>
+    </div>
+    <div class="quarter">
+      <span class="verticalText">
+        Chor Completion %:
+      </span>
+      <span class="largeText">{{ logData.chorCompletionPercentage }}</span>
+    </div>
+  </div>
+
+  <table style="width:100%; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Room</th>
+        <th>Chor</th>
+        <th>Description</th>
+        <th>Completed</th>
+        <th>Employee</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {{#each logData.chorCompletionPercentage}}
+      <tr>
+        <td>{{ date }}</td>
+        <td>{{ room }}</td>
+        <td>{{ chor }}</td>
+        <td>{{ description }}</td>
+        <td>{{ completed }}</td>
+        <td>{{ employee }}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+
+</html>
